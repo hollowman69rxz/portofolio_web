@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/porto.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body,h1,html {
+                    font-family: "Raleway", sans-serif;
+                    height: 100%;
+                }
+                .header {
+                    overflow: hidden;
+                    background-color: teal;
+                    padding: 20px 10px;
+                }
+                .header a {
+                    float: left;
+                    color: white;
+                    text-align: center;
+                    padding: 12px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 8px;
+                    border-radius: 4px;
+                }
+                .header a.logo {
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                .header a:hover {
+                    background-color: black;
+                    color: teal;
+                }
+                /* .header a.active {
+                    background-color: dodgerblue;
+                    color: white;
+                } */
+                .header-right {
+                    float: right;
+                }
+
+                @media screen and (max-width: 100px) {
+                .header a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+                .header-right {
+                    float: none;
+                }
+                }
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 15px 5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  text-align: center;
+  background-color: whitesmoke;
+  color: teal;
+}
+
+.fa {font-size:50px;}
+</style>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="logo">MON/-\RCHIVES</a>
+    <div class="header-right">
+        <a href="home.html">Home</a>
+        <a href="../layout/resume.html">Resume</a>
+        <a href="../layout/project.html">Project</a>
+    </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Partners</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>55+</h3>
+      <p>Projects</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>100+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-coffee"></i></p>
+      <h3>100+</h3>
+      <p>Meetings</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

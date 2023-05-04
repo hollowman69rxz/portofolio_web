@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/porto.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+
+<body class="w3-light-grey">
+  <div class="w3-container w3-teal w3-center w3-margin-bottom">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">FOREWORD</a>
+      <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+      <a href="certificate.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CERTIFICATE</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+          <a href="#" class="w3-bar-item w3-button">Extras</a>
+          <a href="#" class="w3-bar-item w3-button">Media</a>
+        </div>
+      </div>
+      <a href="#signin" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right"><i class="fa fa-sign-in"> SIGN IN</i></a>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <h2>Resume</h2>
+        <p class="title">Template 1</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>alfiihsan49@gmail.com</p>
+        <p><a href="F:\portofolio_web\pdf\Alfi Resume.pdf#toolbar=0"><button class="button">example1</button></a></p>
+      </div>
+    </div>    
+    <div class="column">
+      <div class="card">
+        <h2>Resume</h2>
+        <p class="title">Template 1</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>alfiihsan49@gmail.com</p>
+        <p><a href="F:\portofolio_web\pdf\Alfi Resume.pdf#toolbar=0"><button class="button">example1</button></a></p>
+      </div>
+    </div>
+  
+  </div>
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+    Find me on social media.
+    <br>
+    <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/stuard5"></a>
+    <a class="fa fa-github w3-hover-opacity" href="https://github.com/hollowman69rxz"></a>
+    <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/alfi-ihsan-652085208/"></a>
+    <!-- <a class="fa fa-instagram w3-hover-opacity" href=""></a>
+    <a class="fa fa-pinterest-p w3-hover-opacity" href=""></a>
+    <a class="fa fa-twitter w3-hover-opacity" href=""></a> -->
+    <br>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </footer>
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+</body>
+
+</html>
